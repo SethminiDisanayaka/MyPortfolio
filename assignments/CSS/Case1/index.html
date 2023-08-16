@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="assets/8.0.1_normalize.css">
+    <style>
+        body>section:first-child>section:first-child{
+            width: 50vw;
+            height: 50vh;
+            background: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        body>section:first-child>section:nth-child(2){
+            width: 50vw;
+            height: 50vh;
+            background: yellow;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        body>section:first-child>section:nth-child(3){
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50vw;
+            height: 50vh;
+            background: green;
+        }
+
+        body>section:first-child>section:nth-child(4){
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50vw;
+            height: 50vh;
+            background: deeppink;
+        }
+
+        body>section:first-child>div{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            background: white;
+
+        }
+
+        body>section:first-child>div>div{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 150px;
+            height: 150px;
+            background: red;
+            border-radius: 100%;
+
+        }
+
+        body>section:first-child>section:first-child>div {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+        body>section:first-child>section:first-child>div>div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body>section:first-child>section:nth-child(2)>div {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+        body>section:first-child>section:nth-child(2)>div>div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        body>section:first-child>section:nth-child(3)>div {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+        body>section:first-child>section:nth-child(3)>div>div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        body>section:first-child>section:nth-child(4)>div {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+        body>section:first-child>section:nth-child(4)>div>div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+    body>section:first-child>section:nth-child(6)>div:first-child{
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-right-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            left: 0;
+            top: 0;
+        }
+        body>section:first-child>section:nth-child(6)>div:nth-child(2){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-left-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            right: 0;
+            top: 0;
+        }
+
+        body>section:first-child>section:nth-child(6)>div:nth-child(3){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-right-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            transform: rotate(180deg);
+            right: 0;
+            bottom: 0;
+        }
+        body>section:first-child>section:nth-child(6)>div:nth-child(4){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-left-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            transform: rotate(180deg);
+            left: 0;
+            bottom: 0;
+        }
+
+        body>section:first-child>section:nth-child(6)>div:nth-child(5){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-left-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            transform: rotate(180deg);
+            left: 49%;
+            bottom: 0;
+        }
+        body>section:first-child>section:nth-child(6)>div:nth-child(6){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-right-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            transform: rotate(180deg);
+            right: 50%;
+            bottom: 0;
+        }
+        body>section:first-child>section:nth-child(6)>div:nth-child(7){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-right-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            left: 50%;
+            top: 0;
+        }
+        body>section:first-child>section:nth-child(6)>div:nth-child(8){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-left-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            right: 50%;
+            top: 0;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        body>section:last-child{
+                transform: rotate(360deg);
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 100%;
+            bottom:-100%
+        }
+
+        body>section:last-child>section:first-child{
+            width: 50vw;
+            height: 50vh;
+            background: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        body>section:last-child>section:nth-child(2){
+            width: 50vw;
+            height: 50vh;
+            background: yellow;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        body>section:last-child>section:nth-child(3){
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50vw;
+            height: 50vh;
+            background: green;
+        }
+
+        body>section:last-child>section:nth-child(4){
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50vw;
+            height: 50vh;
+            background: deeppink;
+        }
+
+        body>section:last-child>div{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            background: white;
+
+        }
+
+        body>section:last-child>div>div{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 150px;
+            height: 150px;
+            background: red;
+            border-radius: 100%;
+
+        }
+
+        body>section:last-child>section:first-child>div {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+        body>section:last-child>section:first-child>div>div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body>section:last-child>section:nth-child(2)>div {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+        body>section:last-child>section:nth-child(2)>div>div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        body>section:last-child>section:nth-child(3)>div {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+        body>section:last-child>section:nth-child(3)>div>div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        body>section:last-child>section:nth-child(4)>div {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 100%;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+        body>section:last-child>section:nth-child(4)>div>div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        body>section:last-child>section:nth-child(6)>div:first-child{
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-right-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            left: 0;
+            top: 0;
+        }
+        body>section:last-child>section:nth-child(6)>div:nth-child(2){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-left-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            right: 0;
+            top: 0;
+        }
+
+        body>section:last-child>section:nth-child(6)>div:nth-child(3){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-right-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            transform: rotate(180deg);
+            right: 0;
+            bottom: 0;
+        }
+        body>section:last-child>section:nth-child(6)>div:nth-child(4){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-left-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            transform: rotate(180deg);
+            left: 0;
+            bottom: 0;
+        }
+
+        body>section:last-child>section:nth-child(6)>div:nth-child(5){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-left-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            transform: rotate(180deg);
+            left: 49%;
+            bottom: 0;
+        }
+        body>section:last-child>section:nth-child(6)>div:nth-child(6){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-right-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            transform: rotate(180deg);
+            right: 50%;
+            bottom: 0;
+        }
+        body>section:last-child>section:nth-child(6)>div:nth-child(7){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-right-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            left: 49%;
+            top: 0;
+        }
+        body>section:last-child>section:nth-child(6)>div:nth-child(8){
+            position: absolute;
+            width: 125px;
+            height: 125px;
+            border-bottom-left-radius: 100px;
+            background-color: white;
+            border: 1px solid white;
+            right: 50%;
+            top: 0;
+        }
+
+    </style>
+</head>
+
+
+<body>
+<section>
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+
+<div>
+    <div></div>
+</div>
+
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</section>
+
+
+<section>
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+    <section>
+        <div>
+            <div></div>
+        </div>
+    </section>
+
+
+    <div>
+        <div></div>
+    </div>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</section>
+
+</body>
+</html>
