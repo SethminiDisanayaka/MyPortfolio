@@ -3,8 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Transition</title>
+  <style>
+    body>section{
+      display: flex;
+      flex-direction: column;
+    }
+    body>section>div{
+        right: 260px;
+        position: relative;
+        width: 300px;
+        margin: 10px;
+        background-color: purple;
+        color: white;
+        font-size: 10px;
+        border-radius: 20px;
+    }
+   section> div:hover {
+       transition-duration: 2s;
+       transition-property: all;
+       right: 10px;
+       background-color: pink;
+
+   }
+    body>section>div>img{
+        font-size: 20px;
+        margin-left: 253px;
+        margin-top: -29px;
+    }
+  </style>
 </head>
 <body>
-
+<section>
+<div>
+  <h1>Menu One</h1>
+    <img src="assets/mail.png" alt="">
+</div>
+<div>
+  <h1>Menu One</h1>
+    <img src="assets/mail.png" alt="">
+</div>
+<div>
+  <h1>Menu One</h1>
+    <img src="assets/mail.png" alt="">
+</div>
+<div>
+  <h1>Menu One</h1>
+    <img src="assets/mail.png" alt="">
+</div>
+<div>
+  <h1>Menu One</h1>
+    <img src="assets/mail.png" alt="">
+</div>
+</section>
 </body>
 </html>
