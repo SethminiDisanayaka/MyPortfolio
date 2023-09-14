@@ -13,6 +13,7 @@ body>header>h2 {
     color: cornflowerblue;
 }
 
+
 body>header>h1 {
     position: absolute;
     top: 150px;
@@ -98,4 +99,19 @@ body>main>section:nth-child(2)>figure{
 body>main>section:nth-child(2)>pre{
     text-align: left;
     margin-left: 220px;
+}
+
+body>main>section:nth-child(3)>aside>div{
+    position: absolute;
+}
+body>main>section:nth-child(3)>aside{
+    margin-top: 300px;
+}
+body>main>section:nth-child(3)>aside>div:first-child{
+    left: 15%;
+    margin-top: -225px;
+}
+body>main>section:nth-child(3)>aside>div:nth-child(2){
+    left: 60%;
+    margin-top: -225px;
 }
