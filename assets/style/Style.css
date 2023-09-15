@@ -115,10 +115,7 @@ body>main>section:nth-child(3)>aside>div:nth-child(2){
     left: 60%;
     margin-top: -225px;
 }
-body>main>section:nth-child(4){
-    position: relative;
-    top: 100px;
-}
+
 body>main>section:nth-child(3)>aside>div>p{
     margin-left: 250px;
     margin-top: -150px;
@@ -143,7 +140,4 @@ section:nth-child(2)>hr:first-child {
     height: 1px;
     background-color: #000;
     margin: 10px 0;
-}
-body>main>section:nth-child(4)>picture{
-    margin-left: 500px;
 }
