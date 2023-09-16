@@ -14,27 +14,45 @@
     <link rel="stylesheet" href="assets/style/Style.css">
 
     <Style>
-
-        body>main>section:nth-child(6)>div{
+        body>footer>nav{
             display: flex;
-            justify-content: space-around;
+            justify-content: space-evenly;
         }
-        .picture{
-            margin-top: 200px;
+        body>footer>nav>div>img {
+            width: 40px;
+            height: 40px;
         }
-        body>main>section:nth-child(6)>div>picture>img{
+        body>footer>div{
+            margin-left: 0;
+            position: absolute;
+            right: 20px;
+            bottom: -530%;
+        }
+        body>footer>div>img{
             width: 200px;
-            height: 250px;
+            height: 200px;
         }
-        body>main>section:nth-child(6)>hr{
-            border: none;
-            height: 1px;
-            background-color: #000;
-            margin: 10px 0;
-            margin-top: 65px;
+        body>footer>address>h3{
+            position: relative;
+            margin-left: 105px;
+            margin-top: -29px;
+            margin-bottom: 45px;
         }
-
-
+        body>footer>address>picture>img{
+            width: 20px;
+            height: 20px;
+        }
+        body>footer{
+            background-color: slategray;
+            border-radius: 25px;
+        }
+        body>footer>address{
+            margin-left: 50px;
+        }
+        body>footer>dfn>h2{
+            margin-left: 45%;
+            margin-top: 100px;
+        }
     </Style>
 </head>
 
@@ -188,13 +206,12 @@ Transforming Ideas<br>into Intuitive<br> Experiences -<br>Showcasing My<br>Creat
             <picture><img src="assets/images/gallery/pic%203.png"></picture>
             <picture class="picture"><img src="assets/images/gallery/pic%204.png"></picture>
         </div>
-        <hr>
     </section>
 
 </main>
 
 <footer>
-    <dfn id="contact"><h1>CONTACT ME</h1> </dfn>
+    <dfn id="contact"><h2>CONTACT ME</h2> </dfn>
     <address>
         <picture><img src="assets/images/Footer/call.png"></picture>
         <h3>+94 011 3917</h3>
@@ -204,14 +221,14 @@ Transforming Ideas<br>into Intuitive<br> Experiences -<br>Showcasing My<br>Creat
         <h3>sethminidissa@gmail.com</h3>
     </address>
     <nav>
-        <picture><img src="assets/images/Footer/fb.png"></picture>
-        <picture><img src="assets/images/Footer/in.png"></picture>
-        <picture><img src="assets/images/Footer/wp.png"></picture>
-        <picture><img src="assets/images/Footer/twitter.png"></picture>
+        <div><img src="assets/images/Footer/fb.png"></div>
+        <div><img src="assets/images/Footer/in.png"></div>
+        <div><img src="assets/images/Footer/wp.png"></div>
+        <div><img src="assets/images/Footer/twitter.png"></div>
     </nav>
-    <aside>
-        <picture><img src="assets/images/Footer/logo.png"></picture>
-    </aside>
+    <div>
+       <img src="assets/images/Footer/logo.png">
+    </div>
 </footer>
 
 </body>
