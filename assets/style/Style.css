@@ -12,8 +12,6 @@ body>header>h2 {
     font-family: Algerian;
     color: cornflowerblue;
 }
-
-
 body>header>h1 {
     position: absolute;
     top: 150px;
@@ -84,14 +82,12 @@ body>main>section:nth-child(2)>figure{
     width: 0;
     margin-top: -200px;
 }
-
 .right-pre{
     margin-left: 750px;
     height: 0;
     width: 0;
     margin-top: -200px;
 }
-
 .left-pre pre, .right-pre pre {
     margin: 0;
     padding-bottom: 100px;
@@ -99,6 +95,12 @@ body>main>section:nth-child(2)>figure{
 body>main>section:nth-child(2)>pre{
     text-align: left;
     margin-left: 220px;
+}
+section:nth-child(2)>hr:first-child {
+    border: none;
+    height: 1px;
+    background-color: #000;
+    margin: 10px 0;
 }
 
 body>main>section:nth-child(3)>aside>div{
@@ -115,7 +117,6 @@ body>main>section:nth-child(3)>aside>div:nth-child(2){
     left: 60%;
     margin-top: -225px;
 }
-
 body>main>section:nth-child(3)>aside>div>p{
     margin-left: 250px;
     margin-top: -150px;
@@ -123,7 +124,7 @@ body>main>section:nth-child(3)>aside>div>p{
 section>div>img{
     margin-left: 35%;
 }
-section>p{
+section:nth-child(3)>p{
     font-size: 25px;
     margin-left: 10%;
 }
@@ -135,7 +136,80 @@ section:nth-child(3)>hr {
     width: 50%;
     margin-left: 250px;
 }
-section:nth-child(2)>hr:first-child {
+
+body>main>section:nth-child(4){
+    position: relative;
+    margin-top: 25%;
+}
+body>main>section:nth-child(4)>picture{
+    position: absolute;
+}
+#a{
+    left: 45%;
+}
+#b{
+    left: 30%;
+    margin-top: 150px;
+}
+#c{
+    left: 25%;
+    margin-top: 300px;
+}
+#d{
+    left: 45%;
+    margin-top: 600px;
+}
+#e{
+    left: 60%;
+    margin-top: 150px;
+}
+#f{
+    left: 65%;
+    margin-top: 300px;
+}
+#g{
+    left: 30%;
+    margin-top: 475px;
+}
+#h{
+    left: 60%;
+    margin-top: 475px;
+}
+
+body>main>section:nth-child(4)>dfn>h1{
+    position: absolute;
+    margin: auto;
+    left: 050%;
+    margin-top: 15%;
+}
+#first{
+    border: none;
+    height: 1px;
+    background-color: #000;
+    margin: 10px 0;
+}
+#second{
+    border: none;
+    height: 1px;
+    background-color: #000;
+    margin: 10px 0;
+    margin-top: 750px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+
+
+.flex-item {
+    flex: 1;
+    background-color: gray;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 25px;
+}
+body>main>section:nth-child(5)>hr{
     border: none;
     height: 1px;
     background-color: #000;
