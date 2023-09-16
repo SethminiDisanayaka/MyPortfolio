@@ -15,7 +15,24 @@
 
     <Style>
 
-
+        body>main>section:nth-child(6)>div{
+            display: flex;
+            justify-content: space-around;
+        }
+        .picture{
+            margin-top: 200px;
+        }
+        body>main>section:nth-child(6)>div>picture>img{
+            width: 200px;
+            height: 250px;
+        }
+        body>main>section:nth-child(6)>hr{
+            border: none;
+            height: 1px;
+            background-color: #000;
+            margin: 10px 0;
+            margin-top: 65px;
+        }
 
 
     </Style>
@@ -164,12 +181,14 @@ Transforming Ideas<br>into Intuitive<br> Experiences -<br>Showcasing My<br>Creat
     </section>
 
     <section>
-        <h1> Gallery</h1>
+        <h1> GALLERY</h1>
+        <div>
             <picture><img src="assets/images/gallery/pic%201.png"></picture>
-            <picture><img src="assets/images/gallery/pic 2.png"></picture>
+            <picture class="picture"><img src="assets/images/gallery/pic 2.png"></picture>
             <picture><img src="assets/images/gallery/pic%203.png"></picture>
-            <picture><img src="assets/images/gallery/pic%204.png"></picture>
-
+            <picture class="picture"><img src="assets/images/gallery/pic%204.png"></picture>
+        </div>
+        <hr>
     </section>
 
 </main>

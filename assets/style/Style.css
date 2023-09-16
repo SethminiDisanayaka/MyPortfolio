@@ -200,8 +200,6 @@ body>main>section:nth-child(4)>dfn>h1{
     flex-direction: row;
     gap: 100px;
 }
-
-
 .flex-item {
     flex: 1;
     background-color: gray;
@@ -214,4 +212,5 @@ body>main>section:nth-child(5)>hr{
     height: 1px;
     background-color: #000;
     margin: 10px 0;
+    margin-top: 65px;
 }
