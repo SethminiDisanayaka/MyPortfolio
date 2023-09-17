@@ -16,9 +16,16 @@
     <Style>
 
         body>main>section:nth-child(2){
-            margin-top: 50px;
+            margin-top: 100px;
             text-align: center;
             font-size: 16px;
+        }
+        body>main>section:nth-child(2)>hr{
+            border: none;
+            height: 1px;
+            background-color: #000;
+            margin: 10px 0;
+            margin-top: 65px;
         }
         body>main>section:nth-child(2)>figure{
             display: flex;
@@ -64,56 +71,15 @@
             margin: 10px 0;
         }
 
-        body>main>section:nth-child(2)>dfn{
+        body>main>section:nth-child(2)>div>dfn{
+            font-size: 30px;
+            position: absolute;
+            top: 125%;
+            right: 8%;
 
         }
 
-     body>footer {
-         background-color: slategray;
-         height: 300px;
-         padding: 20px;
-         display: flex;
-         justify-content: space-evenly;
-         align-items: center;
-     }
 
-        body>footer>nav {
-            flex: 1;
-            display: flex;
-            justify-content: space-evenly;
-            margin-top: 100px;
-        }
-
-        body>footer>div>img {
-            width: 200px;
-            height: 200px;
-        }
-
-        body>footer>address {
-            margin-left: 20px;
-        }
-        /*body>footer>dfn {*/
-        /*    text-align: center;*/
-        /*    margin-top: 28px;*/
-        /*}*/
-        body>footer>address>h3{
-            position: relative;
-            margin-left: 90px;
-            margin-top: -29px;
-            margin-bottom: 45px;
-        }
-        body>footer>address>picture>img{
-            width: 20px;
-            height: 20px;
-        }
-        body>footer>nav>div>img {
-            width: 40px;
-            height: 40px;
-        }
-        body>footer>dfn>h2{
-            position: relative;
-            margin-top: -146px;
-        }
     </Style>
 
 </head>
@@ -147,13 +113,17 @@
     </section>
 
     <section>
-        <dfn id="about me">A
-            B
-            O
-            U
-            T
-            M
+        <hr>
+        <div>
+        <dfn id="about me">
+            A<br><br>
+            B<br><br>
+            O<br><br>
+            U<br><br>
+            T<br><br><br>
+            M<br><br>
             E</dfn>
+        </div>
         <figure>
             <img src="assets/images/about%20me/me.png"alt="Profile Image" class="left-image">
 
