@@ -17,42 +17,60 @@
         * {
             scroll-behavior: smooth;
         }
-        #first{
-            border: none;
-            height: 1px;
-            background-color: #000;
-            margin: 10px 0;
+        body>header>img{
+            position: relative;
+            left: 30px;
+            right: 30px;
+            box-shadow: 1px 2px 9px 1px #6b5a5a;
         }
-        #second{
-            border: none;
-            height: 1px;
-            background-color: #000;
-            margin: 10px 0;
-            margin-top: 750px;
-        }
-        .flex-container {
-            display: flex;
-            flex-direction: row;
-            gap: 100px;
-        }
-        .flex-item {
-            flex: 1;
-            background-color: gray;
+        body>header>h2 {
+            position: absolute;
+            top: 40px;
+            left: 45%;
+            font-size: 60px;
+            font-family: "sans-serif";
+            color: black;
+            box-shadow: 1px 2px 9px 1px #6b5a5a;
             border-radius: 25px;
-            padding: 20px;
-            font-size: 25px;
+            border-color: cornflowerblue;
+        }
+        body>header>h1 {
+            position: absolute;
+            top: 150px;
+            left: 75%;
+            font-size: 30px;
+            font-family: "sans-serif";
+            color: black;
+            box-shadow: 1px 2px 9px 1px #6b5a5a;
+            border-radius: 25px;
+        }
+        body > header > article > section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 40%;
+
+        }
+        body>header>article>section>section>pre{
+            position: absolute;
+            top: 250px;
+            left: 45%;
+            font-size: 175%;
+        }
+        body > header > article > section >section> img {
+            display: inline-block;
+            /*max-width: 100%;*/
+            margin-top: 250px;
+            margin-right: 100px;
         }
 
-
-        body>main>section:nth-child(5)>hr{
-            border: none;
-            height: 1px;
-            background-color: #000;
-            margin: 10px 0;
-            margin-top: 65px;
-        }
-        .flex-item>pre>h1{
-            margin-top: -40px;
+        body>header>article>section>section{
+            width: 44vw;
+            height: 233px;
+            background-color: gray;
+            margin-top: -407px;
+            margin-left: -101px;
+            border-radius: 25px;
         }
 
     </Style>
@@ -63,16 +81,18 @@
 
    <header>
            <img  width="500px" src="assets/images/home/Rectangle%2097.png">
-       <h2>Sethmini Dissanayake</h2>
+       <h2>SETHMINI DISSANAYAKE</h2>
        <h1>Full-Stack Developer</h1>
 
        <article>
            <section>
-           <pre>Software Engineering Student, Passionate Problem Solver.<br>Dedicated to creating innovative solutions and continuously<br>expanding my knowledge in the field of software<br>engineering."</pre>
+               <section>
+                   <img src="assets/images/home/in.png">
+                   <img src="assets/images/home/fb%20(2).png">
+                   <img src="assets/images/home/wp.png">
+               </section>
+           <pre>Software Engineering Student, Passionate Problem<br>Solver.Dedicated to<br>creating innovative solutions<br>and continuously<br>expanding my knowledge<br>in the field of software<br>engineering."</pre>
 
-            <img src="assets/images/home/in.png">
-              <img src="assets/images/home/fb%20(2).png">
-              <img src="assets/images/home/wp.png">
            </section>
        </article>
 

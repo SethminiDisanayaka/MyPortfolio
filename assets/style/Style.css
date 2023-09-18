@@ -201,6 +201,43 @@ body>main>section:nth-child(4)>dfn>h1{
     margin-top: 15%;
 }
 
+#first{
+    border: none;
+    height: 1px;
+    background-color: #000;
+    margin: 10px 0;
+}
+#second{
+    border: none;
+    height: 1px;
+    background-color: #000;
+    margin: 10px 0;
+    margin-top: 750px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+}
+.flex-item {
+    flex: 1;
+    background-color: gray;
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+
+body>main>section:nth-child(5)>hr{
+    border: none;
+    height: 1px;
+    background-color: #000;
+    margin: 10px 0;
+    margin-top: 65px;
+}
+.flex-item>pre>h1{
+    margin-top: -40px;
+}
 
 body>main>section:nth-child(6)>div{
     display: flex;
