@@ -14,28 +14,27 @@
     <link rel="stylesheet" href="assets/style/Style.css">
 
     <Style>
-
-        body>main>section:nth-child(6)>div{
-            display: flex;
-            justify-content: space-around;
+        * {
+            scroll-behavior: smooth;
         }
-        .picture{
-            margin-top: 200px;
+        body>main>section:first-child>section{
+            width: 900px;
+            height: 100px;
+            border: 3px solid cornflowerblue;
+            border-radius: 25px;
+            margin-left: 17%;
+            margin-top: 50px;
+            box-shadow: 1px 2px 9px 1px #6b5a5a;
+            z-index: 3;
         }
-        body>main>section:nth-child(6)>div>picture>img{
-            width: 200px;
-            height: 250px;
+        body>main>section:first-child>nav>menu{
+            font-size: 20px;
+            margin-top: -90px;
+            margin-left: 17%;
         }
-        body>main>section:nth-child(6)>hr{
-            border: none;
-            height: 1px;
-            background-color: #000;
-            margin: 10px 0;
-            margin-top: 65px;
-        }
-
 
     </Style>
+
 </head>
 
 <body>
@@ -59,15 +58,24 @@
 
 <main>
     <section>
-        <section>
+        <section></section>
         <nav>
-            <menu><pre> <a href="#home">Home</a>    <a href="#about me">About Me</a>     <a href="#education">Education</a>      <a href="#services">Services </a>    <a href="#skills">Skills</a>      <a href="#contact">Contact</a> </pre></menu>
+            <menu><pre> <a href="#home">Home</a>    <a href="#about me">About Me</a>     <a href="#education">Education</a>     <a href="#services">Services </a>    <a href="#skills">Skills</a>      <a href="#contact">Contact</a> </pre></menu>
         </nav>
-        </section>
     </section>
 
     <section>
-        <dfn id="about me">ABOUT ME</dfn>
+        <hr>
+        <div>
+        <dfn id="about me">
+            A<br><br>
+            B<br><br>
+            O<br><br>
+            U<br><br>
+            T<br><br><br>
+            M<br><br>
+            E</dfn>
+        </div>
         <figure>
             <img src="assets/images/about%20me/me.png"alt="Profile Image" class="left-image">
 
@@ -188,13 +196,12 @@ Transforming Ideas<br>into Intuitive<br> Experiences -<br>Showcasing My<br>Creat
             <picture><img src="assets/images/gallery/pic%203.png"></picture>
             <picture class="picture"><img src="assets/images/gallery/pic%204.png"></picture>
         </div>
-        <hr>
     </section>
 
 </main>
 
 <footer>
-    <dfn id="contact"><h1>CONTACT ME</h1> </dfn>
+    <dfn id="contact"><h2>CONTACT ME</h2> </dfn>
     <address>
         <picture><img src="assets/images/Footer/call.png"></picture>
         <h3>+94 011 3917</h3>
@@ -204,14 +211,14 @@ Transforming Ideas<br>into Intuitive<br> Experiences -<br>Showcasing My<br>Creat
         <h3>sethminidissa@gmail.com</h3>
     </address>
     <nav>
-        <picture><img src="assets/images/Footer/fb.png"></picture>
-        <picture><img src="assets/images/Footer/in.png"></picture>
-        <picture><img src="assets/images/Footer/wp.png"></picture>
-        <picture><img src="assets/images/Footer/twitter.png"></picture>
+        <div><img src="assets/images/Footer/fb.png"></div>
+        <div><img src="assets/images/Footer/in.png"></div>
+        <div><img src="assets/images/Footer/wp.png"></div>
+        <div><img src="assets/images/Footer/twitter.png"></div>
     </nav>
-    <aside>
-        <picture><img src="assets/images/Footer/logo.png"></picture>
-    </aside>
+    <div>
+       <img src="assets/images/Footer/logo.png">
+    </div>
 </footer>
 
 </body>
