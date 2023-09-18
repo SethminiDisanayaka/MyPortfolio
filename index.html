@@ -17,20 +17,42 @@
         * {
             scroll-behavior: smooth;
         }
-        body>main>section:first-child>section{
-            width: 900px;
-            height: 100px;
-            border: 3px solid cornflowerblue;
-            border-radius: 25px;
-            margin-left: 17%;
-            margin-top: 50px;
-            box-shadow: 1px 2px 9px 1px #6b5a5a;
-            z-index: 3;
+        #first{
+            border: none;
+            height: 1px;
+            background-color: #000;
+            margin: 10px 0;
         }
-        body>main>section:first-child>nav>menu{
-            font-size: 20px;
-            margin-top: -90px;
-            margin-left: 17%;
+        #second{
+            border: none;
+            height: 1px;
+            background-color: #000;
+            margin: 10px 0;
+            margin-top: 750px;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+        }
+        .flex-item {
+            flex: 1;
+            background-color: gray;
+            border-radius: 25px;
+            padding: 20px;
+            font-size: 25px;
+        }
+
+
+        body>main>section:nth-child(5)>hr{
+            border: none;
+            height: 1px;
+            background-color: #000;
+            margin: 10px 0;
+            margin-top: 65px;
+        }
+        .flex-item>pre>h1{
+            margin-top: -40px;
         }
 
     </Style>
@@ -170,16 +192,16 @@ knowledge and skills I have acquired at IJSE to contribute to the ever-evolving 
         <dfn id="services"><h1>SERVICES</h1> </dfn>
         <div class="flex-container">
             <div class="flex-item">
-    <pre>Bug Fixing
+    <pre> <h1>Bug Fixing</h1>
 Unleashing the Power<br>of Code - Expert Bug <br>Fixing Services for<br>Seamless Solutions.</pre>
             </div>
             <div class="flex-item">
-    <pre>Web Design
+    <pre> <h1>Web Design</h1>
 Elevating Web<br>Experiences -<br>Crafting Innovative<br>Designs through<br>Code.
     </pre>
             </div>
             <div class="flex-item">
-    <pre>UI/UX Design
+    <pre> <h1>UI/UX Design</h1>
 Transforming Ideas<br>into Intuitive<br> Experiences -<br>Showcasing My<br>Creative<br>Programming and UI/<br>UX Designs.
     </pre>
             </div>

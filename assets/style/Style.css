@@ -39,7 +39,21 @@ body > header > article > section > img {
     margin-top: -150px;
 }
 
-
+body>main>section:first-child>section{
+    width: 900px;
+    height: 100px;
+    border: 3px solid cornflowerblue;
+    border-radius: 25px;
+    margin-left: 17%;
+    margin-top: 50px;
+    box-shadow: 1px 2px 9px 1px #6b5a5a;
+    z-index: 3;
+}
+body>main>section:first-child>nav>menu{
+    font-size: 20px;
+    margin-top: -90px;
+    margin-left: 17%;
+}
 
 
 body>main>section:nth-child(2){
@@ -186,40 +200,7 @@ body>main>section:nth-child(4)>dfn>h1{
     left: 050%;
     margin-top: 15%;
 }
-#first{
-    border: none;
-    height: 1px;
-    background-color: #000;
-    margin: 10px 0;
-}
-#second{
-    border: none;
-    height: 1px;
-    background-color: #000;
-    margin: 10px 0;
-    margin-top: 750px;
-}
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-}
-.flex-item {
-    flex: 1;
-    background-color: gray;
-    border-radius: 25px;
-    padding: 20px;
-    font-size: 25px;
-}
 
-
-body>main>section:nth-child(5)>hr{
-    border: none;
-    height: 1px;
-    background-color: #000;
-    margin: 10px 0;
-    margin-top: 65px;
-}
 
 body>main>section:nth-child(6)>div{
     display: flex;
