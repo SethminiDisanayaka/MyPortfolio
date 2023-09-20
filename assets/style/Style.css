@@ -1,3 +1,8 @@
+* {
+    scroll-behavior: smooth;
+}
+
+
 body>header>img{
     position: relative;
     left: 30px;
@@ -113,9 +118,9 @@ section:nth-child(2)>hr:first-child {
 }
 
 body>main>section:nth-child(2)>div>dfn{
-    font-size: 30px;
+    font-size: 35px;
     position: absolute;
-    top: 125%;
+    top: 110%;
     right: 8%;
     color: blue;
 
@@ -140,6 +145,15 @@ body>main>section:nth-child(3)>aside>div>p{
     margin-left: 250px;
     margin-top: -150px;
 }
+body>main>section:nth-child(3)>dfn>h1{
+    letter-spacing: 50px;
+    font-size: 35px;
+    margin-left: 30%;
+    color: blue;
+}
+
+
+
 section>div>img{
     margin-left: 35%;
 }
@@ -241,14 +255,16 @@ body>main>section:nth-child(5)>hr{
 
 body>main>section:nth-child(6)>div{
     display: flex;
-    justify-content: space-around;
+   letter-spacing: 10px;
 }
 .picture{
     margin-top: 200px;
 }
-body>main>section:nth-child(6)>div>picture>img{
-    width: 200px;
-    height: 250px;
+body>main>section:nth-child(6)>div>picture>img {
+    /*width: 243px;*/
+    /*height: 385px;*/
+    margin-left: 20px;
+    margin-top: 84px;
 }
 body>footer {
     background-color: slategray;
@@ -298,5 +314,66 @@ body>footer>dfn>h2{
     margin-top: -146px;
 }
 
+body>header>img{
+    position: relative;
+    left: 30px;
+    right: 30px;
+    box-shadow: 1px 2px 9px 1px #6b5a5a;
+}
+body>header>h2 {
+    position: absolute;
+    top: 40px;
+    left: 45%;
+    font-size: 60px;
+    font-family: "sans-serif";
+    color: black;
+    box-shadow: 1px 2px 9px 1px #6b5a5a;
+    border-radius: 25px;
+    border-color: cornflowerblue;
+}
+body>header>h1 {
+    position: absolute;
+    top: 150px;
+    left: 75%;
+    font-size: 30px;
+    font-family: "sans-serif";
+    color: black;
+    box-shadow: 1px 2px 9px 1px #6b5a5a;
+    border-radius: 25px;
+}
+body > header > article > section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 40%;
+
+}
+body>header>article>section>section>pre{
+    position: absolute;
+    top: 250px;
+    left: 45%;
+    font-size: 175%;
+}
+body > header > article > section >section>a> img {
+    display: inline-block;
+    /*max-width: 100%;*/
+    margin-top: 250px;
+    margin-right: 100px;
+}
+
+body>header>article>section>section{
+    width: 44vw;
+    height: 233px;
+    background-color: gray;
+    margin-top: -407px;
+    margin-left: -101px;
+    border-radius: 25px;
+}
+body>main>section:nth-child(6)>div>p{
+    font-size: 25px;
+}
+body>footer{
+    margin-top: 100px;
+}
 
 
