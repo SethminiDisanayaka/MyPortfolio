@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation/Case3</title>
+    <link rel="stylesheet" href="../../../assets/8.0.1_normalize.css">
+    <style>
+
+        body{
+
+            overflow: hidden;
+        }
+        body>section{
+            display: flex;
+            width: max-content;
+            height:100vh;
+            left: 0;
+            right: 0;
+            animation-name: anima;
+            position: relative;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 10s;
+        }
+        body>section>img{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        @keyframes anima {
+            0%{
+                left: 0;
+            }
+            25%{
+                left: -100vw;
+            }
+            50%{
+                left: -200vw;
+            }
+            75%{
+                left: -300vw;
+            }
+            100%{
+               left: -400vw;
+            }
+        }
+    </style>
+
+</head>
+<body>
+   <section>
+        <img src="assets/Acer_Wallpaper_02_3840x2400.jpg" >
+        <img src="assets/Acer_Wallpaper_03_3840x2400.jpg"  >
+        <img src="assets/Acer_Wallpaper_02_3840x2400.jpg"  >
+        <img src="assets/Acer_Wallpaper_05_3840x2400.jpg"  >
+       <img src="assets/Acer_Wallpaper_02_3840x2400.jpg"  >
+   </section>
+
+</body>
+</html>
