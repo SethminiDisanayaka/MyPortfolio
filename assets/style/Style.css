@@ -1,13 +1,13 @@
 * {
     scroll-behavior: smooth;
 }
-
-
-body>header>img{
-    position: relative;
-    left: 30px;
-    right: 30px;
-    box-shadow: 1px 2px 9px 1px #6b5a5a;
+body>header>article>section>section {
+    width: 44vw;
+    height: 233px;
+    border: 2px solid black;
+    margin-top: -407px;
+    margin-left: -101px;
+    border-radius: 25px;
 }
 body>header>h2 {
     position: absolute;
@@ -54,10 +54,12 @@ body>main>section:first-child>section{
     box-shadow: 1px 2px 9px 1px #6b5a5a;
     z-index: 3;
 }
-body>main>section:first-child>nav>menu{
+body>main>section:first-child>nav>menu:hover{
     font-size: 20px;
     margin-top: -90px;
     margin-left: 17%;
+    transition: all;
+
 }
 
 
