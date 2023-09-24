@@ -54,15 +54,11 @@ body>main>section:first-child>section{
     box-shadow: 1px 2px 9px 1px #6b5a5a;
     z-index: 3;
 }
-body>main>section:first-child>nav>menu:hover{
+body>main>section:first-child>nav>menu{
     font-size: 20px;
     margin-top: -90px;
     margin-left: 17%;
-    transition: all;
-
 }
-
-
 body>main>section:nth-child(2){
     margin-top: 100px;
     text-align: center;
@@ -177,7 +173,7 @@ body>main>section:nth-child(3)>aside>div>div{
     border-radius:25px;
     border: 1px solid black;
     margin-left: 331px;
-    margin-top: 45px
+    margin-top: 16px;
 }
 body>main>section:nth-child(3)>aside>div>div>h2{
     font-size: 20px;
