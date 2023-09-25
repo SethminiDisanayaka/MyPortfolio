@@ -42,6 +42,10 @@ body > header > article > section > img {
     display: inline-block;
     max-width: 100%;
     margin-top: -150px;
+    transition: transform 0.3s ease;
+}
+body > header > article > section > img:hover{
+    transform: scale(1.2);
 }
 
 body>main>section:first-child>section{
@@ -190,6 +194,10 @@ body>main>section:nth-child(4){
 }
 body>main>section:nth-child(4)>picture{
     position: absolute;
+    transition: transform 0.3s ease;
+}
+body>main>section:nth-child(4)>picture:hover{
+    transform: scale(1.2);
 }
 #a{
     left: 45%;
@@ -271,6 +279,10 @@ body>main>section:nth-child(5)>dfn>h1{
 body>main>section:nth-child(5)>div>div{
     border: 2px solid black;
     color: white;
+    transition: transform 0.3s ease;
+}
+body>main>section:nth-child(5)>div>div:hover{
+    transform: scale(1.1);
 }
 .flex-item>pre>h1{
     margin-top: -40px;
@@ -283,12 +295,17 @@ body>main>section:nth-child(6)>div{
 .picture{
     margin-top: 200px;
 }
+
 body>main>section:nth-child(6)>div>picture>img {
-    /*width: 243px;*/
-    /*height: 385px;*/
     margin-left: 20px;
     margin-top: 84px;
+    transition: transform 0.3s ease;
 }
+
+body>main>section:nth-child(6)>div>picture>img:hover {
+    transform: scale(1.2);
+}
+
 body>footer {
     background-color: gray;
     height: 300px;
