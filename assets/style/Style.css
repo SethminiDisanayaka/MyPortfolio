@@ -23,7 +23,6 @@ body>header>h1 {
     left: 65%;
     font-size: 30px;
     font-family: Algerian;
-    color: cornflowerblue;
 }
 body > header > article > section {
     display: flex;
@@ -37,6 +36,7 @@ body>header>article>section>pre{
     top: 250px;
     left: 45%;
     font-size: 175%;
+    color: white;
 }
 body > header > article > section > img {
     display: inline-block;
@@ -47,17 +47,19 @@ body > header > article > section > img {
 body>main>section:first-child>section{
     width: 900px;
     height: 100px;
-    border: 3px solid cornflowerblue;
     border-radius: 25px;
     margin-left: 17%;
     margin-top: 50px;
-    box-shadow: 1px 2px 9px 1px #6b5a5a;
-    z-index: 3;
+    border: 2px solid black;
+    background-color: gray;
 }
 body>main>section:first-child>nav>menu{
     font-size: 20px;
     margin-top: -90px;
     margin-left: 17%;
+}
+body>main>section:first-child>nav>menu>pre>a{
+    color: white;
 }
 body>main>section:nth-child(2){
     margin-top: 100px;
@@ -120,7 +122,7 @@ body>main>section:nth-child(2)>div>dfn{
     position: absolute;
     top: 110%;
     right: 8%;
-    color: blue;
+    color: black;
 
 }
 
@@ -140,6 +142,7 @@ body>main>section:nth-child(3)>aside>div:nth-child(2){
     margin-top: -225px;
 }
 body>main>section:nth-child(3)>aside>div>p{
+    font-size: 27px;
     margin-left: 250px;
     margin-top: -150px;
 }
@@ -147,7 +150,7 @@ body>main>section:nth-child(3)>dfn>h1{
     letter-spacing: 50px;
     font-size: 35px;
     margin-left: 30%;
-    color: blue;
+    color: black;
 }
 
 
@@ -260,6 +263,15 @@ body>main>section:nth-child(5)>hr{
     margin: 10px 0;
     margin-top: 65px;
 }
+body>main>section:nth-child(5)>dfn>h1{
+    letter-spacing: 50px;
+    margin-left: 500px;
+    margin-bottom: 80px;
+}
+body>main>section:nth-child(5)>div>div{
+    border: 2px solid black;
+    color: white;
+}
 .flex-item>pre>h1{
     margin-top: -40px;
 }
@@ -278,12 +290,13 @@ body>main>section:nth-child(6)>div>picture>img {
     margin-top: 84px;
 }
 body>footer {
-    background-color: slategray;
+    background-color: gray;
     height: 300px;
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    color: white;
 }
 
 body>footer>nav {
