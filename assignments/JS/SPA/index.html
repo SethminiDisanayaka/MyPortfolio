@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assests/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assests/font-awsome/css/all.min.css">
+    <script src="../assests/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg "  id="nav">
+    <div class="container-fluid bg-body-tertiary">
+        <a class="navbar-brand" href="#" style="color: mediumseagreen">Uresha POS System</a>
+        <button class="navbar-toggler" type="button" aria-label="Toggle Navigation">
+            <span class="navbar-toggler icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item" id="btnHome">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item" id="btnOrder">
+                    <a class="nav-link" href="#">Orders</a>
+                </li>
+                <li class="nav-item" id="btnItem">
+                    <a class="nav-link" href="#">Item</a>
+                </li>
+                <li class="nav-item" id="btnCustomer">
+                    <a class="nav-link" href="#">Customer</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-users"></i> Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-right-from-bracket"></i>Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="row p-5 m-0 object-fit-contain" id="home">
+    <h1> Uresha POS System</h1>
+    <img src="../assests/img/sambapos-full-mockup-image-1024x581.png" height="581" width="1024"/>
+</section>
+
+<section class="row p-5 m-0 object-fit-contain" id="customer">
+<div class="container-fluid  bg-success">
+    <div class="row border">
+        <div class="col-12 col-md-8">
+            <h5 class="text-warning text-center m-lg-3 pt-2">Customer Form</h5>
+            <div>
+                <div class="mb-3">
+                    <label for="txtID" class="form-label">Customer ID</label>
+                    <input type="text" class="form-control" id="txtID" style="width: 50%;" placeholder="Customer ID">
+                </div>
+                <div class="mb-3">
+                    <label for="txtName" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="txtName" style="width: 50%;" placeholder="Customer Name">
+                </div>
+                <div class="mb-3">
+                    <label for="txtAddress" class="form-label">Customer Address</label>
+                    <input type="text" class="form-control" id="txtAddress" style="width: 50%;" placeholder="Customer Address">
+                </div>
+                <div class="mb-3">
+                    <label for="txtSalary" class="form-label">Customer Salary</label>
+                    <input type="text" class="form-control" id="txtSalary" style="width: 50%;" placeholder="Customer Salary">
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary">Save Customer</button>
+            <button type="button" class="btn btn-warning">Delete Customer</button>
+            <button type="button" class="btn btn-danger">Update Customer</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt-5">
+    <div class="row" class="border rounded border-warning">
+        <div class="col-12 col-md-6" >
+            <table class="table table-bordered table-sm ">
+                <thead>
+                <tr>
+                    <th scope="col" class="bg-success" style="width: 50px;">ID</th>
+                    <th scope="col" class="bg-success" style="width: 150px;">Name</th>
+                    <th scope="col" class="bg-success" style="width: 80px;">Address</th>
+                    <th scope="col" class="bg-success" style="width: 100px;">Salary</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row"><input type="text" class="form-control form-control-sm" value="C001"></th>
+                    <td><input type="text" class="form-control form-control-sm" value="Sethmini"></td>
+                    <td><input type="text" class="form-control form-control-sm" value="Mathara"></td>
+                    <td><input type="text" class="form-control form-control-sm" value="100,000,000"></td>
+                </tr>
+                <tr>
+                    <th scope="row"><input type="text" class="form-control form-control-sm" value="C002"></th>
+                    <td><input type="text" class="form-control form-control-sm" value="Nayana"></td>
+                    <td><input type="text" class="form-control form-control-sm" value="Galle"></td>
+                    <td><input type="text" class="form-control form-control-sm" value="100,000,000"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<section class="row p-5 m-0 object-fit-contain" id="item">
+<div class="container-fluid  bg-success">
+    <div class="row border">
+        <div class="col-12 col-md-8">
+            <h5 class="text-warning text-center m-lg-3 pt-2">Item Form</h5>
+            <div>
+                <div class="mb-3">
+                    <label for="txtItemID" class="form-label">Item ID</label>
+                    <input type="text" class="form-control" id="txtItemID" style="width: 50%;" placeholder="Item ID">
+                </div>
+                <div class="mb-3">
+                    <label for="txtItemName" class="form-label">Item Name</label>
+                    <input type="text" class="form-control" id="txtItemName" style="width: 50%;" placeholder="Item Name">
+                </div>
+                <div class="mb-3">
+                    <label for="txtPrice" class="form-label">Price</label>
+                    <input type="text" class="form-control" id="txtPrice" style="width: 50%;" placeholder="Item Price">
+                </div>
+                <div class="mb-3">
+                    <label for="txtQty" class="form-label">Quantity</label>
+                    <input type="text" class="form-control" id="txtQty" style="width: 50%;" placeholder="Item Quantity">
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary">Save Item</button>
+            <button type="button" class="btn btn-warning">Delete Item</button>
+            <button type="button" class="btn btn-danger">Update Item</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <table class="table table-bordered table-sm">
+                <thead>
+                <tr>
+                    <th scope="col" class="bg-success" style="width: 50px;">ID</th>
+                    <th scope="col" class="bg-success" style="width: 150px;">Name</th>
+                    <th scope="col" class="bg-success" style="width: 80px;">Price</th>
+                    <th scope="col" class="bg-success" style="width: 100px;">Quantity</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row"><input type="text" class="form-control form-control-sm" value="I001"></th>
+                    <td><input type="text" class="form-control form-control-sm" value="Sugar"></td>
+                    <td><input type="text" class="form-control form-control-sm" value="250.00"></td>
+                    <td><input type="text" class="form-control form-control-sm" value="1000KG"></td>
+                </tr>
+                <tr>
+                    <th scope="row"><input type="text" class="form-control form-control-sm" value="I002"></th>
+                    <td><input type="text" class="form-control form-control-sm" value="Soap"></td>
+                    <td><input type="text" class="form-control form-control-sm" value="105.00"></td>
+                    <td><input type="text" class="form-control form-control-sm" value="100"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="row p-5 m-0 object-fit-contain" id="order" >
+
+    <div class="row">
+
+
+        <div class="col-4 bg-warning">
+            <div class="col-4 bg-success" style="height: 100px"></div>
+        </div>
+
+
+        <div class="col-4 bg-warning" >
+            <div class="col-4 bg-success" style="height: 100px"></div>
+        </div>
+
+
+        <div class="col-4 bg-success"> div 3</div>
+
+
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-12 col-md-8" >
+                <table class="table table-bordered table-sm ">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="bg-success" style="width: 50px;">Item Code</th>
+                        <th scope="col" class="bg-success" style="width: 150px;">Item Name</th>
+                        <th scope="col" class="bg-success" style="width: 80px;">Price</th>
+                        <th scope="col" class="bg-success" style="width: 100px;">Quantity</th>
+                        <th scope="col" class="bg-success" style="width: 100px;">Total Price</th>
+
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row"><input type="text" class="form-control form-control-sm" value="I001"></th>
+                        <td><input type="text" class="form-control form-control-sm" value="Soap"></td>
+                        <td><input type="text" class="form-control form-control-sm" value="105.00"></td>
+                        <td><input type="text" class="form-control form-control-sm" value="2"></td>
+                        <td><input type="text" class="form-control form-control-sm" value="210.00"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+
+</script>
+</body>
+</html>

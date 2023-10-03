@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Que</title>
+
+  <style>
+      section {
+
+          display: flex;
+          flex-direction: row; /* This makes it behave like a row */
+      }
+
+      section>div{
+          height: 100px;
+          width: 200px;
+          color: white;
+          border: 2px solid black;
+          position: relative;
+          margin-top: 10%;
+      }
+
+      section>div:first-child{
+          margin-top: 50px;
+      }
+      section>div:last-child{
+          margin-top: 250px;
+      }
+  </style>
+</head>
+<body>
+
+<section>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+    <div ></div>
+</section>
+
+</body>
+
+<script>
+    var color = ["red","orange","deeppink","green","blue"];
+    var divs = document.querySelectorAll("section>div");
+
+    setInterval(changeColor,1000);
+
+    function changeColor() {
+
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].style.backgroundColor = color[i];
+        }
+
+        let lastColor =color.pop();
+        let currentColor = color.unshift(lastColor);
+    }
+
+
+
+</script>
+</html>
