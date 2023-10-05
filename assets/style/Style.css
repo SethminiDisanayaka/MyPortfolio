@@ -1,6 +1,7 @@
 * {
     scroll-behavior: smooth;
 }
+
 body>header>article>section>section {
     width: 44vw;
     height: 233px;

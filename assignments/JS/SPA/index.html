@@ -48,6 +48,7 @@
     <img src="../assests/img/sambapos-full-mockup-image-1024x581.png" height="581" width="1024"/>
 </section>
 
+
 <section class="row p-5 m-0 object-fit-contain" id="customer">
 <div class="container-fluid  bg-success">
     <div class="row border">
@@ -71,9 +72,11 @@
                     <input type="text" class="form-control" id="txtSalary" style="width: 50%;" placeholder="Customer Salary">
                 </div>
             </div>
-            <button type="button" class="btn btn-primary">Save Customer</button>
-            <button type="button" class="btn btn-warning">Delete Customer</button>
+            <button type="button" class="btn btn-primary" id="btnSaveCus">Save Customer</button>
+            <button type="button" class="btn btn-warning" >Delete Customer</button>
             <button type="button" class="btn btn-danger">Update Customer</button>
+            <button class="btn btn-success" id="btnGetAll">Get All</button>
+            <button class="btn btn-danger" id="btn-clear1">Clear All</button>
         </div>
     </div>
 </div>
@@ -81,7 +84,7 @@
 <div class="container-fluid mt-5">
     <div class="row" class="border rounded border-warning">
         <div class="col-12 col-md-6" >
-            <table class="table table-bordered table-sm ">
+            <table class="table table-bordered table-sm  " >
                 <thead>
                 <tr>
                     <th scope="col" class="bg-success" style="width: 50px;">ID</th>
@@ -90,19 +93,9 @@
                     <th scope="col" class="bg-success" style="width: 100px;">Salary</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
-                    <th scope="row"><input type="text" class="form-control form-control-sm" value="C001"></th>
-                    <td><input type="text" class="form-control form-control-sm" value="Sethmini"></td>
-                    <td><input type="text" class="form-control form-control-sm" value="Mathara"></td>
-                    <td><input type="text" class="form-control form-control-sm" value="100,000,000"></td>
-                </tr>
-                <tr>
-                    <th scope="row"><input type="text" class="form-control form-control-sm" value="C002"></th>
-                    <td><input type="text" class="form-control form-control-sm" value="Nayana"></td>
-                    <td><input type="text" class="form-control form-control-sm" value="Galle"></td>
-                    <td><input type="text" class="form-control form-control-sm" value="100,000,000"></td>
-                </tr>
+
+                <tbody id="tblCustomer">
+
                 </tbody>
             </table>
         </div>
@@ -222,6 +215,10 @@
     </div>
 </section>
 
+
+
+
+<script src="../assests/bootstrap/js/jquery-3.7.1.min.js"></script>
 <script>
     document.getElementById("customer").style.display="none";
     document.getElementById("item").style.display="none";
@@ -252,6 +249,54 @@
         document.getElementById("order").style.display="none";
         document.getElementById("home").style.display="block";
     });
+
+
+    var customers = [
+        {id: "C001", name: "Dasun", address: "Galle", salary: 1000.22},
+        {id: "C002", name: "Iman", address: "Mathara", salary: 2000.22}
+    ];
+
+    $("#btnSaveCus").click(function () {
+
+        let cus_ID = $("#txtID").val();
+        let cus_Name = $("#txtName").val();
+        let cus_Address = $("#txtAddress").val();
+        let cus_Salary = $("#txtSalary").val();
+
+        var customer = {
+            id: cus_ID,
+            name: cus_Name,
+            address: cus_Address,
+            salary: cus_Salary
+        }
+
+        //add customer to object to the array
+        customers.push(customer);
+        getAllCustomers();
+        console.log(customers);
+    });
+
+    $("#btnGetAll").click(function () {
+        getAllCustomers();
+
+    });
+
+    function getAllCustomers(){
+        //remove all the child elements of tbody before adding the table rows
+        $("#tblCustomer").empty();
+
+        for (let i = 0; i < customers.length; i++) {
+            let row = `<tr>
+                            <td>${customers[i].id}</td>
+                            <td>${customers[i].name}</td>
+                            <td>${customers[i].address}</td>
+                            <td>${customers[i].salary}</td>
+                        </tr>`;
+            $("#tblCustomer").append(row);
+        }
+    }
+
+
 </script>
 </body>
 </html>

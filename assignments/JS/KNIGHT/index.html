@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knight_rider</title>
+
+    <style>
+        section{
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            height: 700px;
+        }
+        section>div{
+            height: 100px;
+            width: 200px;
+            border: 2px solid black;
+            margin-top: 20%;
+        }
+        section>div:first-child{
+            margin-left: 3%;
+        }
+    </style>
+</head>
+<body>
+<section>
+
+<!--    <audio>-->
+<!--        <source src="/assignments/JS/assests/audio/WhatsApp Audio 2023-10-04 at 08.31.39.mp3">-->
+<!--    </audio>-->
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+
+<script>
+    let colors = ['white','white','pink','red', 'pink', 'white','white'];
+    let divs = document.querySelectorAll("section>div");
+
+    setInterval(processQue,100);
+
+    function processQue() {
+        for (let i = 0; i < colors.length; i++) {
+            divs[i].style.background=colors[i];
+        }
+
+        let lastValue=colors.pop();
+        colors.unshift(lastValue);
+    }
+</script>
+
+</html>

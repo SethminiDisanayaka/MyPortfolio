@@ -8,7 +8,7 @@
       section {
 
           display: flex;
-          flex-direction: row; /* This makes it behave like a row */
+          flex-direction: row;
       }
 
       section>div{
@@ -17,18 +17,42 @@
           color: white;
           border: 2px solid black;
           position: relative;
-          margin-top: 10%;
+          margin-left: 5%;
       }
 
       section>div:first-child{
-          margin-top: 50px;
+          margin-top: 36px;
       }
       section>div:last-child{
-          margin-top: 250px;
+          margin-top: 321px;
+      }
+
+      section>div:nth-child(2){
+          margin-top: 12%;
+      }
+      section>div:nth-child(3){
+          margin-top: 12%;
+      }
+      section>div:nth-child(4){
+          margin-top: 12%;
+      }
+
+      #a{
+          margin: auto;
+          top: 172px;
+          position: relative;
+      }
+      #b{
+          margin: auto;
+          position: relative;
+          top: 300px;
       }
   </style>
 </head>
 <body>
+
+<hr id="a">
+<hr id="b">
 
 <section>
     <div ></div>
