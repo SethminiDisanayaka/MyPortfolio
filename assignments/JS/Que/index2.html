@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Que task2</title>
+</head>
+
+<style>
+    body>section:first-child{
+        display: flex;
+        flex-direction: row;
+    }
+    body>section:first-child>div>img{
+        width: 200px;
+        height: 200px;
+        margin-top: 22px;
+    }
+    body>section:first-child>div>h1{
+        margin-top: 103px;
+    }
+
+    body>section:nth-child(2)>button{
+        width: 100px;
+        height: 50px;
+        margin-left: 100px;
+    }
+</style>
+<body>
+<section>
+    <div>
+        <h1>A</h1>
+        <img src="../assests/img/49A6.gif" >
+    </div>
+    <div>
+        <h1>B</h1>
+        <img src="../assests/img/49A6.gif" >
+    </div>
+    <div>
+        <h1>C</h1>
+        <img src="../assests/img/49A6.gif" >
+    </div>
+    <div>
+        <h1>D</h1>
+        <img src="../assests/img/49A6.gif" >
+    </div>
+    <div>
+        <h1>E</h1>
+        <img src="../assests/img/49A6.gif" >
+    </div>
+    <div>
+        <h1>F</h1>
+        <img src="../assests/img/49A6.gif" >
+    </div>
+</section>
+
+<section>
+    <button id="btnStart" type="button">Start</button>
+    <button id="btnStop" type="button">Stop</button>
+</section>
+
+<script>
+    var letters = [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F"
+    ];
+    var h1Elements = document.querySelectorAll("section:first-child>div>h1");
+    var interval;
+
+    function changeLetter() {
+        for (var i = 0; i < h1Elements.length; i++) {
+            h1Elements[i].textContent = letters[i];
+        }
+        let lastLetter = letters.pop();
+        letters.unshift(lastLetter);
+    }
+
+    document.getElementById("btnStart").addEventListener("click", function () {
+        clearInterval(interval);
+        interval = setInterval(changeLetter, 1000);
+    });
+
+    document.getElementById("btnStop").addEventListener("click", function () {
+        clearInterval(interval);
+    });
+</script>
+
+</body>
+</html>
