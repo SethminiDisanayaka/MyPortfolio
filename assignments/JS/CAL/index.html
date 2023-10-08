@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cal</title>
+</head>
+
+<style>
+  body>section{
+    border: 2px solid red;
+    width: 505px;
+    margin-left: 500px;
+    margin-top: 100px;
+  }
+  body>section>section:nth-child(2){
+    width: 500px;
+    height: 500px;
+    display: grid;
+    border: 2px solid black;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 10px;
+  }
+  body>section>section:nth-child(2)>button{
+    border: 2px solid black;
+    background-color: #25cff2;
+    font-size: 25px;
+  }
+
+  body>section>section:first-child{
+    border: 2px solid black;
+    width: 500px;
+  }
+  body>section>section:first-child>button{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    background-color: #9ec5fe;
+    margin-left: 10px;
+    font-size: 25px;
+
+  }
+  body>section>section:first-child>input{
+    width: 400px;
+    height: 50px;
+    background-color:#9ec5fe ;
+    border: 2px solid black;
+    margin-left: 97px;
+    margin-top: -52px;
+  }
+</style>
+
+<body>
+<section>
+
+
+  <section>
+    <button id="btnClear">C</button>
+    <input id="display" type="text">
+  </section>
+
+
+  <section>
+    <button id="btn7">7</button>
+    <button id="btn8">8</button>
+    <button id="btn9">9</button>
+    <button id="btnPlus">+</button>
+    <button id="btn4">4</button>
+    <button id="btn5">5</button>
+    <button id="btn6">6</button>
+    <button id="btnMinus">-</button>
+    <button id="btn1">1</button>
+    <button id="btn2">2</button>
+    <button id="btn3">3</button>
+    <button id="btnDivide">/</button>
+    <button id="btn0">0</button>
+    <button id="btnDecimal">.</button>
+    <button id="btnEqual">=</button>
+    <button id="btnMultiple">*</button>
+  </section>
+</section>
+
+
+<script>
+
+     var firstOperand = "";
+     var secondOperand = "";
+     var currentOperation = "";
+
+    var display = document.getElementById('display');
+    var btn0 = document.getElementById('btn0');
+    var btn1 = document.getElementById('btn1');
+    var btn2 = document.getElementById('btn2');
+    var btn3 = document.getElementById('btn3');
+    var btn4 = document.getElementById('btn4');
+    var btn5 = document.getElementById('btn5');
+    var btn6 = document.getElementById('btn6');
+    var btn7 = document.getElementById('btn7');
+    var btn8 = document.getElementById('btn8');
+    var btn9 = document.getElementById('btn9');
+    var btnPlus = document.getElementById('btnPlus');
+    var btnMinus = document.getElementById('btnMinus');
+    var btnDecimal = document.getElementById('btnDecimal');
+    var btnMultiple = document.getElementById('btnMultiple');
+    var btnDivide = document.getElementById('btnDivide');
+    var btnEqual = document.getElementById('btnEqual');
+
+
+
+
+    btn0.addEventListener("click", function () {
+      display.value +="0";
+    });
+    btn1.addEventListener("click", function () {
+      display.value +="1";
+    });
+    btn2.addEventListener("click", function () {
+      display.value +="2";
+    });
+    btn3.addEventListener("click", function () {
+      display.value +="3";
+    });
+    btn4.addEventListener("click", function () {
+      display.value +="4";
+    });
+    btn5.addEventListener("click", function () {
+      display.value +="5";
+    });
+    btn6.addEventListener("click", function () {
+      display.value +="6";
+    });
+    btn7.addEventListener("click", function () {
+      display.value +="7";
+    });
+    btn8.addEventListener("click", function () {
+      display.value +="8";
+    });
+    btn9.addEventListener("click", function () {
+      display.value +="9";
+    });
+
+
+    btnPlus.addEventListener("click", function () {
+      display.value ="+";
+    });
+
+    btnMinus.addEventListener("click", function () {
+      display.value ="-";
+    });
+
+    btnDecimal.addEventListener("click", function () {
+      display.value =".";
+    });
+
+    btnDivide.addEventListener("click", function () {
+      display.value ="/";
+    });
+
+    btnPlus.addEventListener("click", function () {
+      firstOperand = display.value;
+
+      display.value = "";
+
+      currentOperation = "+";
+    });
+
+    btnEqual.addEventListener("click",function (){
+      if (firstOperand !== "" && secondOperand !== "" && currentOperation !== "") {
+        if (currentOperation === "+") {
+          var result = parseFloat(firstOperand) + parseFloat(secondOperand);
+          display.value = result;
+        }
+        firstOperand = "";
+        secondOperand = "";
+        currentOperation = "";
+      }
+    });
+
+</script>
+</body>
+</html>
