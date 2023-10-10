@@ -11,6 +11,7 @@
     width: 505px;
     margin-left: 500px;
     margin-top: 100px;
+    background-color: rosybrown;
   }
   body>section>section:nth-child(2){
     width: 500px;
@@ -25,6 +26,7 @@
     border: 2px solid black;
     background-color: #25cff2;
     font-size: 25px;
+    border-radius: 25px;
   }
 
   body>section>section:first-child{
@@ -32,21 +34,23 @@
     width: 500px;
   }
   body>section>section:first-child>button{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border: 2px solid black;
     background-color: #9ec5fe;
     margin-left: 10px;
     font-size: 25px;
+    border-radius: 25px;
 
   }
   body>section>section:first-child>input{
     width: 400px;
-    height: 50px;
+    height: 60px;
     background-color:#9ec5fe ;
     border: 2px solid black;
     margin-left: 97px;
     margin-top: -52px;
+    border-radius: 25px;
   }
 </style>
 
@@ -83,8 +87,7 @@
 
 <script>
   var firstNumber = "";
-  var secondNumber = "";
-  var currentOperation = "";
+  var currentOption = "";
 
   var display = document.getElementById('display');
   var btn0 = document.getElementById('btn0');
@@ -105,7 +108,7 @@
   var btnEqual = document.getElementById('btnEqual');
   var btnClear = document.getElementById('btnClear');
 
-  // Event listeners for number buttons
+
   btn0.addEventListener("click", function () {
     display.value += "0";
   });
@@ -144,61 +147,61 @@
   btnPlus.addEventListener("click", function () {
     firstNumber = display.value;
     display.value = "";
-    currentOperation = "+";
+    currentOption = "+";
   });
 
   btnMinus.addEventListener("click", function () {
     firstNumber = display.value;
     display.value = "";
-    currentOperation = "-";
+    currentOption = "-";
   });
 
   btnMultiple.addEventListener("click", function (){
     firstNumber = display.value;
     display.value = "";
-    currentOperation = "*";
+    currentOption = "*";
   });
 
   btnDivide.addEventListener("click", function (){
     firstNumber = display.value;
     display.value = "";
-    currentOperation = "/";
+    currentOption = "/";
   });
 
   btnEqual.addEventListener("click", function () {
-    if (firstNumber !== "" && currentOperation === "+") {
+    if (firstNumber !== "" && currentOption === "+") {
       var result = parseFloat(firstNumber) + parseFloat(display.value);
       display.value = result;
       firstNumber = "";
-      currentOperation = "";
+      currentOption = "";
     }
 
-    if (firstNumber !== "" && currentOperation === "-") {
+    if (firstNumber !== "" && currentOption === "-") {
       var result = parseFloat(firstNumber) - parseFloat(display.value);
       display.value = result;
       firstNumber = "";
-      currentOperation = "";
+      currentOption = "";
     }
 
-    if (firstNumber !== "" && currentOperation === "*") {
+    if (firstNumber !== "" && currentOption === "*") {
       var result = parseFloat(firstNumber) * parseFloat(display.value);
       display.value = result;
       firstNumber = "";
-      currentOperation = "";
+      currentOption = "";
     }
 
-    if (firstNumber !== "" && currentOperation === "/") {
+    if (firstNumber !== "" && currentOption === "/") {
       var result = parseFloat(firstNumber) / parseFloat(display.value);
       display.value = result;
       firstNumber = "";
-      currentOperation = "";
+      currentOption = "";
     }
   });
 
   btnClear.addEventListener("click" ,function (){
     display.value = "";
     firstNumber = "";
-    currentOperation = "";
+    currentOption = "";
   });
 </script>
 
