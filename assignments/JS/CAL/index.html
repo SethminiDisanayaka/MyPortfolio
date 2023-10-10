@@ -82,100 +82,125 @@
 
 
 <script>
+  var firstNumber = "";
+  var secondNumber = "";
+  var currentOperation = "";
 
-     var firstOperand = "";
-     var secondOperand = "";
-     var currentOperation = "";
+  var display = document.getElementById('display');
+  var btn0 = document.getElementById('btn0');
+  var btn1 = document.getElementById('btn1');
+  var btn2 = document.getElementById('btn2');
+  var btn3 = document.getElementById('btn3');
+  var btn4 = document.getElementById('btn4');
+  var btn5 = document.getElementById('btn5');
+  var btn6 = document.getElementById('btn6');
+  var btn7 = document.getElementById('btn7');
+  var btn8 = document.getElementById('btn8');
+  var btn9 = document.getElementById('btn9');
+  var btnPlus = document.getElementById('btnPlus');
+  var btnMinus = document.getElementById('btnMinus');
+  var btnDecimal = document.getElementById('btnDecimal');
+  var btnMultiple = document.getElementById('btnMultiple');
+  var btnDivide = document.getElementById('btnDivide');
+  var btnEqual = document.getElementById('btnEqual');
+  var btnClear = document.getElementById('btnClear');
 
-    var display = document.getElementById('display');
-    var btn0 = document.getElementById('btn0');
-    var btn1 = document.getElementById('btn1');
-    var btn2 = document.getElementById('btn2');
-    var btn3 = document.getElementById('btn3');
-    var btn4 = document.getElementById('btn4');
-    var btn5 = document.getElementById('btn5');
-    var btn6 = document.getElementById('btn6');
-    var btn7 = document.getElementById('btn7');
-    var btn8 = document.getElementById('btn8');
-    var btn9 = document.getElementById('btn9');
-    var btnPlus = document.getElementById('btnPlus');
-    var btnMinus = document.getElementById('btnMinus');
-    var btnDecimal = document.getElementById('btnDecimal');
-    var btnMultiple = document.getElementById('btnMultiple');
-    var btnDivide = document.getElementById('btnDivide');
-    var btnEqual = document.getElementById('btnEqual');
-
-
-
-
-    btn0.addEventListener("click", function () {
-      display.value +="0";
-    });
-    btn1.addEventListener("click", function () {
-      display.value +="1";
-    });
-    btn2.addEventListener("click", function () {
-      display.value +="2";
-    });
-    btn3.addEventListener("click", function () {
-      display.value +="3";
-    });
-    btn4.addEventListener("click", function () {
-      display.value +="4";
-    });
-    btn5.addEventListener("click", function () {
-      display.value +="5";
-    });
-    btn6.addEventListener("click", function () {
-      display.value +="6";
-    });
-    btn7.addEventListener("click", function () {
-      display.value +="7";
-    });
-    btn8.addEventListener("click", function () {
-      display.value +="8";
-    });
-    btn9.addEventListener("click", function () {
-      display.value +="9";
-    });
+  // Event listeners for number buttons
+  btn0.addEventListener("click", function () {
+    display.value += "0";
+  });
+  btn1.addEventListener("click", function () {
+    display.value += "1";
+  });
+  btn2.addEventListener("click", function () {
+    display.value += "2";
+  });
+  btn3.addEventListener("click", function () {
+    display.value += "3";
+  });
+  btn4.addEventListener("click", function () {
+    display.value += "4";
+  });
+  btn5.addEventListener("click", function () {
+    display.value += "5";
+  });
+  btn6.addEventListener("click", function () {
+    display.value += "6";
+  });
+  btn7.addEventListener("click", function () {
+    display.value += "7";
+  });
+  btn8.addEventListener("click", function () {
+    display.value += "8";
+  });
+  btn9.addEventListener("click", function () {
+    display.value += "9";
+  });
+  btnDecimal.addEventListener("click",function (){
+    display.value += ".";
+  });
 
 
-    btnPlus.addEventListener("click", function () {
-      display.value ="+";
-    });
+  btnPlus.addEventListener("click", function () {
+    firstNumber = display.value;
+    display.value = "";
+    currentOperation = "+";
+  });
 
-    btnMinus.addEventListener("click", function () {
-      display.value ="-";
-    });
+  btnMinus.addEventListener("click", function () {
+    firstNumber = display.value;
+    display.value = "";
+    currentOperation = "-";
+  });
 
-    btnDecimal.addEventListener("click", function () {
-      display.value =".";
-    });
+  btnMultiple.addEventListener("click", function (){
+    firstNumber = display.value;
+    display.value = "";
+    currentOperation = "*";
+  });
 
-    btnDivide.addEventListener("click", function () {
-      display.value ="/";
-    });
+  btnDivide.addEventListener("click", function (){
+    firstNumber = display.value;
+    display.value = "";
+    currentOperation = "/";
+  });
 
-    btnPlus.addEventListener("click", function () {
-      firstOperand = display.value;
+  btnEqual.addEventListener("click", function () {
+    if (firstNumber !== "" && currentOperation === "+") {
+      var result = parseFloat(firstNumber) + parseFloat(display.value);
+      display.value = result;
+      firstNumber = "";
+      currentOperation = "";
+    }
 
-      display.value = "";
+    if (firstNumber !== "" && currentOperation === "-") {
+      var result = parseFloat(firstNumber) - parseFloat(display.value);
+      display.value = result;
+      firstNumber = "";
+      currentOperation = "";
+    }
 
-      currentOperation = "+";
-    });
+    if (firstNumber !== "" && currentOperation === "*") {
+      var result = parseFloat(firstNumber) * parseFloat(display.value);
+      display.value = result;
+      firstNumber = "";
+      currentOperation = "";
+    }
 
-    btnEqual.addEventListener("click",function (){
-      if (firstOperand !== "" && secondOperand !== "" && currentOperation !== "") {
-        if (currentOperation === "+") {
-          var result = parseFloat(firstOperand) + parseFloat(secondOperand);
-          display.value = result;
-        }
-        firstOperand = "";
-        secondOperand = "";
-        currentOperation = "";
-      }
-    });
+    if (firstNumber !== "" && currentOperation === "/") {
+      var result = parseFloat(firstNumber) / parseFloat(display.value);
+      display.value = result;
+      firstNumber = "";
+      currentOperation = "";
+    }
+  });
 
+  btnClear.addEventListener("click" ,function (){
+    display.value = "";
+    firstNumber = "";
+    currentOperation = "";
+  });
 </script>
+
 </body>
 </html>
