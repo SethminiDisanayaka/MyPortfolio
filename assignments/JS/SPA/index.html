@@ -379,25 +379,6 @@
         console.log(customers);
     });
 
-    $("#btnGetAll").click(function () {
-        getAllCustomers();
-
-    });
-
-    function getAllCustomers(){
-        //remove all the child elements of tbody before adding the table rows
-        $("#tblCustomer").empty();
-
-        for (let i = 0; i < customers.length; i++) {
-            let row = `<tr>
-                            <td>${customers[i].id}</td>
-                            <td>${customers[i].name}</td>
-                            <td>${customers[i].address}</td>
-                            <td>${customers[i].salary}</td>
-                        </tr>`;
-            $("#tblCustomer").append(row);
-        }
-    }
 
 
 </script>

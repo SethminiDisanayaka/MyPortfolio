@@ -2,7 +2,7 @@
     scroll-behavior: smooth;
 }
 
-body>header>article>section>section {
+body>main>section:first-child>article>section>section {
     width: 44vw;
     height: 233px;
     border: 2px solid black;
@@ -10,7 +10,7 @@ body>header>article>section>section {
     margin-left: -101px;
     border-radius: 25px;
 }
-body>header>h2 {
+body>main>section:first-child>h2 {
     position: absolute;
     top: 40px;
     left: 45%;
@@ -18,54 +18,54 @@ body>header>h2 {
     font-family: Algerian;
     color: cornflowerblue;
 }
-body>header>h1 {
+body>main> section:first-child>h1 {
     position: absolute;
     top: 150px;
     left: 65%;
     font-size: 30px;
     font-family: Algerian;
 }
-body > header > article > section {
+body >main> section:first-child > article > section {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-left: 40%;
 
 }
-body>header>article>section>pre{
+body>main>section:first-child>article>section>pre{
     position: absolute;
     top: 250px;
     left: 45%;
     font-size: 175%;
     color: white;
 }
-body > header > article > section > img {
-    display: inline-block;
-    max-width: 100%;
-    margin-top: -150px;
-    transition: transform 0.3s ease;
-}
-body > header > article > section > img:hover{
-    transform: scale(1.2);
-}
+/*body >header > article > section > img {*/
+/*    display: inline-block;*/
+/*    max-width: 100%;*/
+/*    margin-top: -150px;*/
+/*    transition: transform 0.3s ease;*/
+/*}*/
+/*body > header> article > section > img:hover{*/
+/*    transform: scale(1.2);*/
+/*}*/
 
-body>main>section:first-child>section{
-    width: 900px;
-    height: 100px;
-    border-radius: 25px;
-    margin-left: 17%;
-    margin-top: 129px;
-    border: 2px solid black;
-    background-color: gray;
-}
-body>main>section:first-child>nav>menu{
-    font-size: 20px;
-    margin-top: -90px;
-    margin-left: 17%;
-}
-body>main>section:first-child>nav>menu>pre>a{
-    color: white;
-}
+/*body>header>section{*/
+/*    width: 900px;*/
+/*    height: 100px;*/
+/*    border-radius: 25px;*/
+/*    margin-left: 17%;*/
+/*    margin-top: 0px;*/
+/*    border: 2px solid black;*/
+/*    background-color: gray;*/
+/*}*/
+/*body>header>nav>menu{*/
+/*    font-size: 20px;*/
+/*    margin-top: -90px;*/
+/*    margin-left: 17%;*/
+/*}*/
+/*body>header>nav>menu>pre>a{*/
+/*    color: white;*/
+/*}*/
 body>main>section:nth-child(2){
     margin-top: 100px;
     text-align: center;
@@ -365,13 +365,13 @@ body>footer>dfn>h2{
     margin-top: -146px;
 }
 
-body>header>img{
+body>main>section:first-child>img{
     position: relative;
     left: 30px;
     right: 30px;
     box-shadow: 1px 2px 9px 1px #6b5a5a;
 }
-body>header>h2 {
+body>main>section:first-child>h2 {
     position: absolute;
     top: 40px;
     left: 45%;
@@ -382,7 +382,7 @@ body>header>h2 {
     border-radius: 25px;
     border-color: cornflowerblue;
 }
-body>header>h1 {
+body>main>section:first-child>h1 {
     position: absolute;
     top: 150px;
     left: 75%;
@@ -392,26 +392,26 @@ body>header>h1 {
     box-shadow: 1px 2px 9px 1px #6b5a5a;
     border-radius: 25px;
 }
-body > header > article > section {
+body > main>section:first-child > article > section {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-left: 40%;
 
 }
-body>header>article>section>section>pre{
+body>main>section:first-child>article>section>section>pre{
     position: absolute;
     top: 250px;
     left: 45%;
     font-size: 175%;
 }
-body > header > article > section >section>a> img {
+body > main>section:first-child > article > section >section>a> img {
     display: inline-block;
     margin-top: 276px;
     margin-right: 100px;
 }
 
-body>header>article>section>section{
+body>main>section:first-child>article>section>section{
     width: 44vw;
     height: 233px;
     background-color: gray;
@@ -427,3 +427,52 @@ body>footer{
 }
 
 
+header {
+    height: 70px;
+    width: 60vw;
+    border-radius: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 5px;
+    margin: auto;
+    box-shadow: 1px 2px 9px 1px blue;
+    z-index: 3;
+    background: white;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    padding: 19px;
+    margin-top: -23px;
+}
+
+header > nav > ul > li > a {
+    text-decoration: none;
+    color: #332f2f;
+    font-size: 25px;
+}
+
+header > nav > ul > li > a > i {
+    padding-right: 8px;
+    font-size: 35px;
+    color: #ff0a0a;
+}
+
+body > section {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 99px;
+    background: white;
+    top: 0;
+    z-index: 2;
+}
+
+body>main>section:first-child{
+    margin-top: 104px;
+}
+
+body>main>section:first-child>article>section>section {
+    margin-top: -574px;
+}
