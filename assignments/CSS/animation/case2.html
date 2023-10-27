@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation/Case 2</title>
+
+    <style>
+   body{
+       background-color: black;
+   }
+   body>section>div{
+       width: 400px;
+       height: 400px;
+       border-radius: 100%;
+       position: absolute;
+       left: 0;
+       right: 0;
+       top: 0;
+       bottom: 0;
+       margin: auto;
+       background: linear-gradient(45deg, #2b2f32 , black) ;
+   }
+
+   body>section>div:first-child{
+       /*background-color: papayawhip;*/
+       background: papayawhip;
+       animation-name: moon;
+       animation-duration: 5s;
+       animation-direction: alternate;
+       animation-timing-function: linear;
+       animation-iteration-count: infinite ;
+   }
+   @keyframes moon {
+       0%{
+           left: 40%;
+           bottom: 40%;
+       }
+       50%{
+           top: 0;
+           bottom: 0;
+           left: 0;
+           right: 0;
+           box-shadow: 0 0 10vw 0 papayawhip;
+       }
+       100%{
+           right: 40%;
+           top: 40%;
+       }
+   }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>
