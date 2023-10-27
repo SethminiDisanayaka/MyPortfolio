@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InMemoryPOS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assests/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../assests/font-awsome/css/all.min.css">
+
+</head>
+
+<style>
+    section>img{
+        width: 100vw;
+        height: 100vh;
+    }
+</style>
+<body>
+<header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand text-success fs-4" href="#" >Uresha POS System</a>
+
+            <div class="col-3" id="navbarNavAltMarkup">
+                <div class="navbar-nav" >
+                    <a class="nav-link" aria-current="page" href="index.html" id="btnHome">HOME</a>
+                    <a class="nav-link"  id="btnCustomer">CUSTOMER</a>
+                    <a class="nav-link"  id="btnItem">ITEM</a>
+                    <a class="nav-link"  id="btnPlaceOrder">PLACEORDER</a>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-outline-success">SIGN UP</button>
+
+        </div>
+    </nav>
+
+</header>
+
+<section id="Home">
+    <img src="../assests/img/sambapos-full-mockup-image-1024x581.png">
+</section>
+
+
+<main id="customer" >
+    <section class="row p-4 m-0 object-fit-contain" style="background-color: #a3cfbb">
+        <div class="row justify-content-center object-fit-contain row mt-5 border border-success">
+            <h5 class="text-success text-center m-lg-3 pt-5" >CUSTOMER FORM</h5>
+            <form class="m-5">
+                <div class="mb-3">
+                    <label for="cusID" class="form-label text-dark">CUSTOMER  ID</label>
+                    <input type="text" class="form-control  border-success text-dark focus-ring-warning" id="cusID" >
+                </div>
+                <div class="mb-3">
+                    <label for="cusName" class="form-label text-dark">NAME</label>
+                    <input type="text" class="form-control  border-success text-dark focus-ring-warning" id="cusName">
+                </div>
+                <div class="mb-3">
+                    <label for="cusAddress" class="form-label text-dark">ADDRESS</label>
+                    <input type="text" class="form-control  border-success text-dark focus-ring-warning" id="cusAddress">
+                </div>
+                <div class="mb-3">
+                    <label for="cusContact" class="form-label text-dark">CONTACT</label>
+                    <input type="tel" class="form-control  border-success text-dark focus-ring-warning " id="cusContact">
+                </div>
+                <div class="row m-0 gap-2 mt-5">
+                    <button type="button" class="btn btn-outline-success  col" id="onActionSave">SAVE</button>
+                    <button type="button" class="btn btn-outline-success col" id="btnCustomerUpdate">UPDATE</button>
+                    <button type="button" class="btn btn-outline-success col" id="btnDelete">DELETE</button>
+                    <button type="button" class="btn btn-outline-success col" id="btnGetAll">GET ALL</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-5 border-white m-3  border-start">
+            <table class="table text-white" id="tblcustomer">
+                <thead class="text-success">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">NAME</th>
+                    <th scope="col">ADDRESS</th>
+                    <th scope="col">CONTACT</th>
+                </tr>
+                </thead>
+                <tbody  id="customerTbody">
+                <tr></tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+</main>
+
+<main class="container-fluid" id="item" style="background-color: #a3cfbb">
+    <section class="row p-4 m-0 object-fit-contain ">
+        <div class="row justify-content-center object-fit-contain row mt-5 border border-success">
+            <h5 class="text-success text-center m-lg-3 pt-5" >ITEM FORM</h5>
+
+            <form class="m-5">
+                <div class="mb-3">
+                    <label for="itemID" class="form-label">ITEM ID</label>
+                    <input type="email" class="form-control  border-success  focus-ring-warning" id="itemID" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">DESCRIPTION</label>
+                    <input type="text" class="form-control  border-success  focus-ring-warning" id="description">
+                </div>
+                <div class="mb-3">
+                    <label for="uPrice" class="form-label">UNIT PRICE</label>
+                    <input type="text" class="form-control  border-success  focus-ring-warning" id="uPrice">
+                </div>
+                <div class="mb-3">
+                    <label  class="form-label">QUANTITY</label>
+                    <input type="text" class="form-control  border-success  focus-ring-warning" id="quantity">
+                </div>
+
+                <div class="row m-0 gap-2 mt-5">
+                    <button type="button" class="btn btn-outline-success  col" id="onActionSaveItem">SAVE</button>
+                    <button type="button" class="btn btn-outline-success col" id="btnItemUpdate">UPDATE</button>
+                    <button type="button" class="btn btn-outline-success col" id="btnItemDelete">DELETE</button>
+                    <button type="button" class="btn btn-outline-success col" id="btnItemGetAll">GET ALL</button>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="col-5 m-4 border-start">
+            <table class="table text-white m-3" id="tblItem">
+                <thead class="text-success">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">DESCRIPTION</th>
+                    <th scope="col">UNIT PRICE</th>
+                    <th scope="col">QUANTITY</th>
+                </tr>
+                </thead>
+                <tbody id="itemTbody">
+                <tr></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<main id="placeOrder" style="background-color: #a3cfbb">
+    <section class="row p-4 m-0">
+        <div class="row mt-5 border border-success">
+            <h5 class="text-success text-center m-lg-3 pt-2">PLACE ORDER FORM</h5>
+
+            <div class="row ">
+                <h6 class="text-primary">ORDER DETAILS</h6>
+                <form class=" me-3">
+                    <div class="row border-bottom ">
+                        <div class="mb-1 col">
+                            <label for="InputOID" class="form-label ">ORDER ID</label>
+                            <input type="text"
+                                   class="form-control  border-primary  focus-ring-warning"
+                                   id="InputOID" readonly>
+                        </div>
+                        <div class="mb-1 col mb-4">
+                            <label for="InputDate" class="form-label border-primary">DATE</label>
+                            <input type="text"
+                                   class="form-control  border-primary  focus-ring-warning focus-ring"
+                                   id="InputDate">
+                        </div>
+                    </div>
+
+                    <h6 class="text-warning mt-2">CUSTOMER DETAILS</h6>
+
+                    <div class="row border-bottom ">
+                        <div class="mb-1 col">
+                            <label for="cmbCusID" class="form-label border-warning">CUSTOMER ID</label>
+                            <select class="form-select   focus-ring-warning focus-ring"
+                                    aria-label="Default select example" id="cmbCusID">
+                                <option selected></option>
+                            </select>
+                        </div>
+                        <div class="mb-1 col mb-4">
+                            <label for="selectedCusName" class="form-label ">CUSTOMER NAME</label>
+                            <input type="text"
+                                   class="form-control  border-warning  focus-ring-warning focus-ring "
+                                   id="selectedCusName" readonly>
+                        </div>
+                    </div>
+
+                    <h6 class="text-danger mt-2">ITEM DETAILS</h6>
+
+                    <div class="row">
+                        <div class="mb-1 col">
+                            <label for="cmbItemCode" class="form-label border-danger">ITEM ID</label>
+                            <select class="form-select   focus-ring-warning focus-ring"
+                                    aria-label="Default select example" id="cmbItemCode">
+                                <option selected></option>
+                            </select>
+                        </div>
+                        <div class="mb-1 col mb-4">
+                            <label for="selectedItemDes" class="form-label ">DESCRIPTION</label>
+                            <input type="text"
+                                   class="form-control  border-danger  focus-ring-warning focus-ring "
+                                   id="selectedItemDes" readonly>
+                        </div>
+                    </div>
+
+
+                        <div class="row">
+                            <div class="mb-1 col">
+                                <label for="selectedItemUp" class="form-label text-white">UNIT PRICE</label>
+                                <input type="text"
+                                       class="form-control  border-danger text-warning focus-ring-warning focus-ring "
+                                       id="selectedItemUp" readonly>
+
+                            </div>
+                        <div class="mb-1 col">
+                            <label for="selectedQty" class="form-label border-danger">QTY ON HAND</label>
+                            <input type="number"
+                                   class="form-control  border-danger  focus-ring-warning focus-ring "
+                                   id="selectedQty" readonly>
+                        </div>
+
+                        <div class="mb-1 col">
+                            <label for="Qty" class="form-label ">QTY</label>
+                            <input type="number"
+                                   class="form-control  border-danger  focus-ring-warning focus-ring "
+                                   id="Qty">
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+
+            <button class="btn  mt-5 mb-5 bg-success" type="submit" d="btnAddToCart">ADD TO CART</button>
+        </div>
+
+        <div class="col m-3 ">
+            <div class="row mt-5 border border-success">
+                <h5 class="text-success mt-4 mb-3 ms-2">CART</h5>
+                <table class="table  " id="tblPlaceOrder">
+                    <thead class="text-success">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">DESCRIPTION</th>
+                        <th scope="col">UNIT PRICE</th>
+                        <th scope="col">QTY</th>
+                        <th scope="col">TOTAL</th>
+                        <th scope="col">ACTION</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tBodyPlaceOrder">
+                    <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row mt-5 border border-success ">
+                <h5 class="text-success  mt-3 mb-2">PURCHASE ORDER</h5>
+                <div class="row">
+                    <div class="mb-1 col">
+                        <label for="inputTotal" class="form-label ">TOTAL</label>
+                        <input type="number"
+                               class="form-control  border-success  focus-ring-warning focus-ring "
+                               id="inputTotal" readonly>
+                    </div>
+
+<!--                    <div class="mb-5 col text-success">-->
+<!--                        <label for="subTotal" class="form-label ">SUB TOTAL</label>-->
+<!--                        <input type="number"-->
+<!--                               class="form-control  border-success  focus-ring-warning focus-ring mb-4 rounded"-->
+<!--                               id="subTotal" readonly>-->
+<!--                    </div>-->
+                </div>
+
+                <div class="row">
+                    <div class="mb-1 col">
+                        <label for="inputCash" class="form-label ">CASH</label>
+                        <input type="number"
+                               class="form-control  border-success  focus-ring-warning focus-ring "
+                               id="inputCash">
+                    </div>
+
+<!--                    <div class="mb-1 col">-->
+<!--                        <label for="discount" class="form-label text-white">DISCOUNT</label>-->
+<!--                        <input type="number"-->
+<!--                               class="form-control  border-success focus-ring-warning focus-ring "-->
+<!--                               id="discount">-->
+<!--                    </div>-->
+
+                    <div class="mb-1 col">
+                        <label for="balance" class="form-label ">BALANCE</label>
+                        <input type="number"
+                               class="form-control  border-success  focus-ring-warning focus-ring "
+                               id="balance" readonly>
+                    </div>
+
+                </div>
+                <div class="row ms-1">
+                    <button class="btn  mt-5 mb-5 bg-success" type="submit" id="btnPurchase">PURCHASE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+
+<script src="assests/font-awsome/js/all.min.js"></script>
+<script src="assests/font-awsome/js/jquery-3.7.0.min.js"></script>
+
+<script src="db/db.js"></script>
+<script src="model/customerModel.js"></script>
+<script src="controllers/validations/customerValidation.js"></script>
+<script src="controllers/customerController.js"></script>
+<script src="../assests/bootstrap/js/bootstrap.js"></script>
+<script src="controllers/itemController.js"></script>
+<script src="controllers/validations/itemValidation.js"></script>
+<script src="model/itemModel.js"></script>
+<script src="controllers/placeOrderController.js"></script>
+<script src="model/PlaceOrderModel.js"></script>
+
+
+<script>
+    document.getElementById("customer").style.display="none";
+    document.getElementById("item").style.display="none";
+    document.getElementById("placeOrder").style.display="none";
+
+
+    document.getElementById("btnCustomer").addEventListener("click",function (){
+        document.getElementById("Home").style.display="none";
+        document.getElementById("customer").style.display="block";
+        document.getElementById("item").style.display="none";
+        document.getElementById("placeOrder").style.display="none";
+    });
+
+    document.getElementById("btnItem").addEventListener("click",function (){
+        document.getElementById("Home").style.display="none";
+        document.getElementById("customer").style.display="none";
+        document.getElementById("item").style.display="block";
+        document.getElementById("placeOrder").style.display="none";
+    });
+
+
+    document.getElementById("btnPlaceOrder").addEventListener("click",function (){
+        document.getElementById("Home").style.display="none";
+        document.getElementById("customer").style.display="none";
+        document.getElementById("item").style.display="none";
+        document.getElementById("placeOrder").style.display="block";
+    });
+
+    document.getElementById("btnHome").addEventListener("click",function (){
+        document.getElementById("Home").style.display="block";
+        document.getElementById("customer").style.display="none";
+        document.getElementById("item").style.display="none";
+        document.getElementById("placeOrder").style.display="none";
+    });
+</script>
+</body>
+</html>
