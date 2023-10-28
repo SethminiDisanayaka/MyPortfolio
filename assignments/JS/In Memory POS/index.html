@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../assests/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="../assests/font-awsome/css/all.min.css">
 
+
 </head>
 
 <style>
@@ -230,7 +231,7 @@
                 </form>
             </div>
 
-            <button class="btn  mt-5 mb-5 bg-success" type="submit" d="btnAddToCart">ADD TO CART</button>
+            <button class="btn  mt-5 mb-5 bg-success" type="submit" id="btnAddToCart">ADD TO CART</button>
         </div>
 
         <div class="col m-3 ">
@@ -318,6 +319,7 @@
 <script src="model/PlaceOrderModel.js"></script>
 
 
+
 <script>
     document.getElementById("customer").style.display="none";
     document.getElementById("item").style.display="none";
@@ -351,6 +353,14 @@
         document.getElementById("customer").style.display="none";
         document.getElementById("item").style.display="none";
         document.getElementById("placeOrder").style.display="none";
+    });
+
+    document.getElementById("btnOrd").addEventListener("click",function (){
+        document.getElementById("Home").style.display="none";
+        document.getElementById("customer").style.display="none";
+        document.getElementById("item").style.display="none";
+        document.getElementById("placeOrder").style.display="none";
+        document.getElementById("ord").style.display="block";
     });
 </script>
 </body>
