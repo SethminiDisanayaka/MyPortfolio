@@ -1,4 +1,3 @@
-
 let OrderPreID="O00-00";
 let orderNo=1;
 
@@ -49,6 +48,7 @@ $('#cmbItemCode').change(function () {
 });
 
 $("#btnAddToCart").click(function () {
+
     addToCart();
 });
 
@@ -95,7 +95,6 @@ function addToCart() {
     newCart.IQty = oQty;
     newCart.ITotal = oTotal;
 
-    //add customer record to the customer array
     orderDetailDb.push(newCart);
     for (let i = 0; i < itemDetails.length; i++) {
         if(itemDetails[i].code==oItemID){
@@ -104,7 +103,6 @@ function addToCart() {
     }
 
 
-    //create row and add text field values
     let row=`<tr>
                     <td>${newCart.IID}</td>
                     <td>${newCart.IName}</td>
@@ -112,7 +110,6 @@ function addToCart() {
                     <td>${newCart.IQty}</td>
                     <td>${newCart.ITotal}</td>
                    </tr>`;
-    //and then append the row to tableBody
     $("#tBodyPlaceOrder").append(row);
 
     for (let i = 0; i <= orderDetailDb.length; i++) {
@@ -129,7 +126,7 @@ $('#inputCash').keydown(function (event){
         let balance = Number($('#inputCash').val())-Number($('#inputTotal').val());
 
         $('#balance').val(balance);
-        //purchaseOrder();
+
     }
 
 });

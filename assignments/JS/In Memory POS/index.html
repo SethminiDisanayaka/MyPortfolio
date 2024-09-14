@@ -263,15 +263,6 @@
                                id="inputTotal" readonly>
                     </div>
 
-<!--                    <div class="mb-5 col text-success">-->
-<!--                        <label for="subTotal" class="form-label ">SUB TOTAL</label>-->
-<!--                        <input type="number"-->
-<!--                               class="form-control  border-success  focus-ring-warning focus-ring mb-4 rounded"-->
-<!--                               id="subTotal" readonly>-->
-<!--                    </div>-->
-                </div>
-
-                <div class="row">
                     <div class="mb-1 col">
                         <label for="inputCash" class="form-label ">CASH</label>
                         <input type="number"
@@ -279,24 +270,20 @@
                                id="inputCash">
                     </div>
 
-<!--                    <div class="mb-1 col">-->
-<!--                        <label for="discount" class="form-label text-white">DISCOUNT</label>-->
-<!--                        <input type="number"-->
-<!--                               class="form-control  border-success focus-ring-warning focus-ring "-->
-<!--                               id="discount">-->
-<!--                    </div>-->
-
-                    <div class="mb-1 col">
-                        <label for="balance" class="form-label ">BALANCE</label>
-                        <input type="number"
-                               class="form-control  border-success  focus-ring-warning focus-ring "
-                               id="balance" readonly>
-                    </div>
-
                 </div>
-                <div class="row ms-1">
-                    <button class="btn  mt-5 mb-5 bg-success" type="submit" id="btnPurchase">PURCHASE</button>
+
+
+                <div class="mb-1 col">
+                    <label for="balance" class="form-label ">BALANCE</label>
+                    <input type="number"
+                           class="form-control  focus-ring-warning focus-ring "
+                           id="balance" readonly>
                 </div>
+
+            </div>
+            <div class="row ms-1">
+                <button class="btn btn-outline-success mt-5 mb-5" type="button" id="btnPurchase"> PURCHASE</button>
+            </div>
             </div>
         </div>
     </section>
@@ -355,13 +342,6 @@
         document.getElementById("placeOrder").style.display="none";
     });
 
-    document.getElementById("btnOrd").addEventListener("click",function (){
-        document.getElementById("Home").style.display="none";
-        document.getElementById("customer").style.display="none";
-        document.getElementById("item").style.display="none";
-        document.getElementById("placeOrder").style.display="none";
-        document.getElementById("ord").style.display="block";
-    });
 </script>
 </body>
 </html>
